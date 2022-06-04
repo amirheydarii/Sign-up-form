@@ -1,0 +1,53 @@
+@import "color";
+@import "fonts";
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+    .image-container{
+        position: relative;
+        background-image: url(/Sign-up-Form/images/babaii.png);
+        width: 40vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .odin{
+            display: flex;
+            position: absolute;
+            top: 10em;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .odin-img{
+                height: 25vh;
+            }
+
+            .odin-text{
+                color: rgb(255, 255, 255);
+                font-family: $blaka-hollow;
+                font-size: 4em;
+            }
+        }
+
+        .copyright{
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            font-family: $quicksand;
+            font-weight: $font-size-light;
+            color: rgb(255, 255, 255);
+            
+            a{
+                text-decoration: none;
+                color: aqua;
+            }
+        }
+    }
+}
