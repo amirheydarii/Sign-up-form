@@ -7,6 +7,8 @@ body {
     flex-direction: row;
     height: 100vh;
     overflow: hidden;
+    background-color: rgb(244, 244, 244);
+    // gap: 2vw;
     .image-container{
         position: relative;
         background-image: url(/images/babaii.png);
@@ -47,6 +49,64 @@ body {
             a{
                 text-decoration: none;
                 color: aqua;
+            }
+        }
+    }
+
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .explain-service{
+            width: min(1500px , 40vw);
+            font-family: $font-robot;
+            font-weight: $font-size-larger;
+            font-size: larger;
+            margin: 0 0 0 4vw;
+            line-height: 130%;
+        }
+
+        .explain-service2{
+            font-family: $quicksand;
+            font-weight: $font-size-large;
+            font-size: large;
+            margin: 0 0 0 4vw;
+        }
+        
+        form {
+
+            .form-container {
+                display: flex;
+                gap: 5vw;
+                background-color: rgb(255, 255, 255);
+                width: 60vw;
+
+                .form-righthand{
+                    
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 4vw;
+                    }
+                }
+
+                .form-lefthand {
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            button {
+                margin-left: 4vw;
+            }
+
+            .ask-account {
+                margin: 0 0 0 4vw;
             }
         }
     }

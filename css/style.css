@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Blaka&family=Blaka+Hollow&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300;500&display=swap");
 body {
   display: flex;
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
+  background-color: rgb(244, 244, 244);
 }
 body .image-container {
   position: relative;
@@ -43,4 +44,45 @@ body .image-container .copyright {
 body .image-container .copyright a {
   text-decoration: none;
   color: aqua;
+}
+body .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .explain-service {
+  width: min(1500px, 40vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: larger;
+  margin: 0 0 0 4vw;
+  line-height: 130%;
+}
+body .container .explain-service2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  margin: 0 0 0 4vw;
+}
+body .container form .form-container {
+  display: flex;
+  gap: 5vw;
+  background-color: rgb(255, 255, 255);
+  width: 60vw;
+}
+body .container form .form-container .form-righthand div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+body .container form .form-container .form-lefthand div {
+  display: flex;
+  flex-direction: column;
+}
+body .container form button {
+  margin-left: 4vw;
+}
+body .container form .ask-account {
+  margin: 0 0 0 4vw;
 }
