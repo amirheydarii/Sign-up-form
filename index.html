@@ -7,7 +7,7 @@
     <link rel="icon" href="/images/Group1.png" type="image" />
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
-    <script src="/app/app.js"></script>
+    <script src="/app/app.js" defer ></script>
     <title>Document</title>
   </head>
   <body>
@@ -36,22 +36,22 @@
         sign up now to get statred
       </p>
       <p class="explain-service2">You know you want to !</p>
-      <form action="" method="get">
+      <form id="form" action="" method="get">
         <div class="form-container">
           <div class="form-righthand">
             <div class="before-content">
               <label for="user-firstname">FIRST NAME</label>
-              <input type="text" name="firstname" />
+              <input type="text" name="firstname" required />
             </div>
             <div>
               <label for="user-email">EMAIL</label>
-              <input type="email" id="" name="email" />
+              <input type="email" id="" name="email" required/>
             </div>
             <div>
               <label for="user-password">PASSWORD</label>
               <input
                 type="password"
-                id="user-password"
+                id="userPassword"
                 name="password"
                 required
               />
@@ -60,7 +60,7 @@
           <div class="form-lefthand">
             <div>
               <label for="user-lastname">LAST NAME</label>
-              <input type="text" id="user-lastname" name="lastname" />
+              <input type="text" id="user-lastname" name="lastname" required />
             </div>
             <div>
               <label for="user-phonenumber"> PHONE NUMBER</label>
@@ -70,8 +70,9 @@
               <label for="user-confirmpassword">CONFIRM PASSWORD</label>
               <input
                 type="password"
-                id="user-confirmpassword"
+                id="userConfirmPassword"
                 name="password"
+                required
               />
             </div>
           </div>
