@@ -49,7 +49,9 @@ body .container {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  margin-top: 13vh;
+  gap: 8vh;
 }
 body .container .explain-service {
   width: min(1500px, 40vw);
@@ -65,24 +67,82 @@ body .container .explain-service2 {
   font-size: large;
   margin: 0 0 0 4vw;
 }
+body .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
 body .container form .form-container {
   display: flex;
   gap: 5vw;
   background-color: rgb(255, 255, 255);
   width: 60vw;
+  padding: 2em 0em;
+  box-shadow: 0px 3px 15px rgba(118, 118, 118, 0.4);
+}
+body .container form .form-container .form-righthand {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 body .container form .form-container .form-righthand div {
   display: flex;
   flex-direction: column;
   margin-left: 4vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: small;
+}
+body .container form .form-container .form-righthand div input {
+  border: solid 1px rgb(202, 202, 202);
+  border-radius: 3px;
+  width: 190px;
+  height: 25px;
+  font-size: medium;
+  font-weight: 300;
+}
+body .container form .form-container .form-righthand .before-content:before {
+  content: "let's do this!";
+  font-size: x-large;
+  font-weight: 600;
+  position: relative;
+  bottom: 3vh;
+}
+body .container form .form-container .form-lefthand {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: end;
 }
 body .container form .form-container .form-lefthand div {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: small;
+}
+body .container form .form-container .form-lefthand div input {
+  border: solid 1px rgb(202, 202, 202);
+  border-radius: 3px;
+  width: 190px;
+  height: 25px;
 }
 body .container form button {
   margin-left: 4vw;
+  width: 200px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  padding: 0.7em;
+  border: 0;
+  background-color: rgb(83, 229, 43);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 body .container form .ask-account {
   margin: 0 0 0 4vw;
+  font-family: "Quicksand", sans-serif;
+}
+body .container form .ask-account span {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
