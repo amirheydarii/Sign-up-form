@@ -137,6 +137,7 @@ body .container form button {
   background-color: rgb(83, 229, 43);
   color: rgb(255, 255, 255);
   border-radius: 10px;
+  cursor: pointer;
 }
 body .container form .ask-account {
   margin: 0 0 0 4vw;
